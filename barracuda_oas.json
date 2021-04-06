@@ -1,0 +1,3197 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Barracuda",
+		"version": "2.0",
+		"title": "Barracuda",
+		"termsOfService": "NA",
+		"license": {
+			"name": "Barracuda"
+		}
+	},
+	"host": "api.waas.barracudanetworks.com",
+	"basePath": "/",
+	"tags": [{
+		"name": "Barracuda",
+		"description": "Controller"
+	}],
+	"paths": {
+		"/v2​/waasapi​/applications​/{app_id}​/caching_and_compression​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/clickjacking_protection/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/servers​/{id}​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/data_types​/{id}​/": {
+			"delete": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/request_rewrite​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/top_attacking_countries​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/allow_deny_urls/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/profile_parameter​/{id}​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/connections_over_time​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/response_cloaking": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/components/{cid}/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "cid",
+						"in": "path",
+						"description": "cid",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/basic_security/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/data_types​/{id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/data_types​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/request_limits​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/report​/top_attacked_urls​": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/ip_reputation​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/allow_deny/urls/{id}/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/allow_deny_urls​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/url_profile​/{id}​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/log_server​/{id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/servers​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/url_protection​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/response_cloaking​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/allow_deny​/headers​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/api_login/": {
+			"post": {
+				"tags": [
+					"login"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "loginPost",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"in": "body",
+					"name": "dto",
+					"description": "dto",
+					"required": true,
+					"schema": {
+						"$ref": ""
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/request_rewrite_rule​/{id}​/change_priority​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/bandwidth_over_time​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": null,
+					"in": "body",
+					"description": "NOT APPLICABLE",
+					"required": true,
+					"type": null,
+					"def": null,
+					"format": "int32",
+					"schema": null
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/trusted_hosts_group​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/import​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/backend_ip_test​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/trusted_hosts​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/requests_over_time​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/report​/top_attacking_clients​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/request_rewrite_rule​/{id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/top_attacking_clients​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/trusted_hosts​/{id}​/": {
+			"delete": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/account_ips/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/servers​/{id}​": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/connections_over_time​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/profile_parameter​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/accounts/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/allow_deny_headers/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/caching_and_compression/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/{log_type}​/logs​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "log_type",
+						"in": "path",
+						"description": "logType",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/risk_score​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/load_balancing​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/allow_deny​/headers​/{id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/": {
+			"delete": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/parameter_protection​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/requests_over_time​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/url_normalization​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/components​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/log_server​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/top_attacks_by_category​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/endpoints/ciphers_list": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/allow_deny/headers/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/url_profile​/{id}​/": {
+			"delete": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/allow_deny_headers​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/top_attacks_by_category​/pdf": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/data_theft_protection​/data_types​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/cookie_security​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/export​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/bandwidth_summary​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/advanced_threat_protection​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/endpoints​/{id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/report​/top_attacked_urls​/pdf​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/applications​/{app_id}​/allow_deny​/headers​/{id}​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/virus_scanning​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2​/waasapi​/report​/top_attacking_countries​/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/endpoints​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/report/bandwidth_over_time/": {
+			"get": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/request_rewrite_rules​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/profile_parameter/{id}/": {
+			"patch": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+						"name": "app_id",
+						"in": "path",
+						"description": "app_id",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"description": "id",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/applications​/{app_id}​/url_profiles​/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/v2/waasapi/applications/{app_id}/allow_deny/urls/": {
+			"post": {
+				"tags": [
+					"createAccountCredentials"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "postID",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+					"name": "app_id",
+					"in": "path",
+					"description": "app_id",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"​/v2​/waasapi​/report​/bandwidth_summary​/pdf​/": {
+			"get": {
+				"tags": [
+					"bandwidthSummary"
+				],
+				"summary": "NOT APPLICABLE",
+				"description": "NOT APPLICABLE",
+				"operationId": "bandwidthSummaryGet",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/xml"
+				],
+				"parameters": [{
+
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		}
+	}
+}
