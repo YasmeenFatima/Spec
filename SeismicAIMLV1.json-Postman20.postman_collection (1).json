@@ -1,0 +1,831 @@
+{
+  "info": {
+    "name": "AIML API",
+    "_postman_id": "0785a5af-1af5-4d96-88a5-d131ad7e99bb",
+    "description": "This API serves as an authenticated layer on top of Seismic's AIML services.<br>Additionally, this API serves as a simple wrapper to Seismic .NET packages and code that is required for the AIML team (coding in Python) to use.<h2>Authorization</h2><table style=\"width: 80%\"><tr><th>Endpoint</th><th>Required Scope</th><tr><td><b>/api/aiml/v0/processing</b></td> <td>aiml, dips_read, or dips_management</td></tr><tr><td><b>/api/aiml/v0/recommenders/relatedContent/relatedproperties</b></td> <td>disc_view</td></tr><tr><td><b>/api/aiml/v0/recommenders/homepage/defaultfacets</b></td> <td>search_read</td></tr><tr><td><b>/api/aiml/v0/scoring</b></td> <td>disc_view</td></tr></table>",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "ContentProcessing",
+      "description": "",
+      "item": [
+        {
+          "id": "8838ac54-2251-4347-9ffe-998f2d1411f4",
+          "name": "PostLangDetect",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/langdetect"
+              ],
+              "query": [
+                {
+                  "key": "isWorkspace",
+                  "value": "true",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentId",
+                  "value": "contentId87",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentVersionId",
+                  "value": "contentVersionId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Detect the language of a text snippet"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "26825d3f-7861-4250-8844-8e0cef5348f5"
+            }
+          ]
+        },
+        {
+          "id": "c6455a69-26fb-4fe8-8fe1-096d3c6c126f",
+          "name": "PostImageHash",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/imagehash"
+              ],
+              "query": [
+                {
+                  "key": "hashSize",
+                  "value": "226",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "isWorkspace",
+                  "value": "true",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentId",
+                  "value": "contentId87",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentVersionId",
+                  "value": "contentVersionId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get the perceptual image hash of an image"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "b0ef9231-02ee-4381-ad83-b7fedf21549c"
+            }
+          ]
+        },
+        {
+          "id": "e69094c3-ae60-4ae6-87da-e109763513cd",
+          "name": "PostWinnowTrigger",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/winnow"
+              ],
+              "query": [
+                {
+                  "key": "kgramLength",
+                  "value": "226",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "guaranteeThreshold",
+                  "value": "226",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "isWorkspace",
+                  "value": "true",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentId",
+                  "value": "contentId87",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentVersionId",
+                  "value": "contentVersionId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get the winnow fingerprint of text"
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "d2459e5d-4d27-4aa9-9100-981f0f4a3c0e"
+            }
+          ]
+        },
+        {
+          "id": "f50cf4c7-a3c9-460f-8fd5-52d031e316c5",
+          "name": "PostImageExtract",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/imageextract"
+              ],
+              "query": [
+                {
+                  "key": "fileType",
+                  "value": "fileType87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Extract images from docx's, pdf's and pptx's"
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "64425ef8-ea4e-40d5-a69d-b98727a26380"
+            }
+          ]
+        },
+        {
+          "id": "01ced57d-9b2a-438f-8a5b-fb2d3d475dc6",
+          "name": "PutTika",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/tika"
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            }
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "4de9016e-0ce9-4b53-b60b-b3db0352a697"
+            }
+          ]
+        },
+        {
+          "id": "1231b8e6-36ea-40ad-9838-c49d5d4e60c3",
+          "name": "PutTikaMeta",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/tika/meta"
+              ],
+              "query": [
+                {
+                  "key": "endpoint",
+                  "value": "endpoint87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            }
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "8ff6209f-9c93-46d1-b2ec-0cf69996c919"
+            }
+          ]
+        },
+        {
+          "id": "da386ace-e227-4c3d-8f9e-21130c6a6476",
+          "name": "PutTika",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/processing/tika/detect/stream"
+              ],
+              "query": [
+                {
+                  "key": "endpoint",
+                  "value": "endpoint87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            }
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "6c6e8414-4df3-475f-afb0-e0fcc8d6577e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "description": "",
+      "item": [
+        {
+          "id": "d44a2f39-f806-4cd2-ad23-b40660e5dc04",
+          "name": "GetHealthCheck",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/health"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Basic check to make sure the API is alive"
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "cdaec43b-e0e0-41b7-b6ef-a44e3da3cfce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Models",
+      "description": "",
+      "item": [
+        {
+          "id": "85836ba8-7cd7-4615-85cc-d2919eb6bf9a",
+          "name": "GetLatest",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/models/latest"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get lateset model"
+          },
+          "response": [
+            {
+              "header": [],
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "32c6a5c7-56b6-4ffd-b6c5-285c80ef79ab"
+            }
+          ]
+        },
+        {
+          "id": "be122e0e-c07a-4d5e-9c8e-fed29116021c",
+          "name": "PostSave",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/models/save"
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Saves a model to tenant blob storage"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "78095e84-0b28-4170-9d2f-64e2679d8c08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Recommenders",
+      "description": "",
+      "item": [
+        {
+          "id": "8b6275ea-e46d-494c-ae35-c827e25a373c",
+          "name": "GetRelatedProperties",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/recommenders/relatedContent/relatedproperties"
+              ],
+              "query": [
+                {
+                  "key": "libraryContentId",
+                  "value": "libraryContentId87",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "contentProfileId",
+                  "value": "contentProfileId87",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "limit",
+                  "value": "226",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get related content based on content properties."
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "b33ab29e-cfe8-42ad-aca2-6c514ffa06df"
+            }
+          ]
+        },
+        {
+          "id": "2ee5fd0f-88e2-45ff-bda4-efa233a56538",
+          "name": "GetHomepageDefaultFacets",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/recommenders/homepage/defaultfacets"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "userId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get facets from content type or similar content property name."
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "2cbd4333-2b5c-45e8-9254-31e8ea47e611"
+            }
+          ]
+        },
+        {
+          "id": "9bc86a3f-b24f-47d9-a71a-719dc4a55078",
+          "name": "GetImplicitRecommend",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/recommenders/implicit/recommend"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "userId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get content recommendation for \"because you viewed\""
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "7b561a99-7d0d-4ccb-be8f-972219052c17"
+            }
+          ]
+        },
+        {
+          "id": "8b57cbbd-3b51-47f0-a3fb-e90d0448d2f8",
+          "name": "GetImplicitSimilar",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/recommenders/implicit/similar"
+              ],
+              "query": [
+                {
+                  "key": "libraryContentId",
+                  "value": "libraryContentId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get content that is similar based on views and uses"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "32c09955-e383-4ab6-ab89-fc0a14574e94"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scoring",
+      "description": "",
+      "item": [
+        {
+          "id": "9e73d690-243e-43c8-ab8b-515b62501423",
+          "name": "GetPopularScore",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/scoring/popularscore"
+              ],
+              "query": [
+                {
+                  "key": "libraryContentId",
+                  "value": "libraryContentId87",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "Get popular score for a content"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "e65dded4-c1d5-4c86-8348-9f6e438ac252"
+            }
+          ]
+        },
+        {
+          "id": "0b4499a2-0bf1-4753-9afc-ed2a0ebbd2db",
+          "name": "GetPopularToday",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "www.example.com",
+              "path": [
+                "api/aiml/v0/Algorithms/popularToday"
+              ],
+              "query": [
+                {
+                  "key": "actionCount",
+                  "value": "226",
+                  "description": "The number of views and uses today",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": "The score for an imaginary content with one view ever, which happened today"
+          },
+          "response": [
+            {
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain",
+                  "disabled": false
+                }
+              ],
+              "body": "{}",
+              "status": "Success",
+              "code": 200,
+              "name": "Response_200",
+              "id": "ee4ffdfc-f5f9-4557-9546-ac8e8e8d287c"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [],
+  "auth": {
+    "type": "apikey",
+    "apikey": {
+      "key": "Authorization",
+      "value": "Authorization87",
+      "in": "header"
+    }
+  }
+}
